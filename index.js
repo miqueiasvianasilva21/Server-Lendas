@@ -133,7 +133,7 @@ app.post('/create_legend', upload.single('imagem'), (req, res) => {
 });
 
 app.get("/",(req,res)=>{
-  res.send("Hello World")
+  res.send("Tá certo")
 }
 )
 
