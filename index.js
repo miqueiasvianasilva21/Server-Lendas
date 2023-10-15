@@ -132,6 +132,12 @@ app.post('/create_legend', upload.single('imagem'), (req, res) => {
     res.send({ msg: 'Lenda cadastrada com sucesso' });
 });
 
+app.get("/",(req,res)=>{
+  res.send("Hello World")
+}
+)
+
+
   
 
 
