@@ -3,19 +3,19 @@ const express = require("express");
 const app = express();
 const cors = require('cors')
 
-// const url = 'mongodb+srv://Miqueias:falliscoming@cluster-amazonia.ju1blud.mongodb.net/Lendas-da-Amazonia';
-// const dbName = 'Lendas-da-Amazonia';
-// const userCollection = 'user';
-// const lendCollection = 'lenda';
-// const testeCollection = 'teste'; 
+const url = 'mongodb+srv://Miqueias:falliscoming@cluster-amazonia.ju1blud.mongodb.net/Lendas-da-Amazonia';
+const dbName = 'Lendas-da-Amazonia';
+const userCollection = 'user';
+const lendCollection = 'lenda';
+const testeCollection = 'teste'; 
 require('dotenv').config();
 const port = process.env.PORT || 3001;
 
-const url = process.env.MONGODB_URL;
-const dbName = process.env.MONGODB_DB_NAME;
-const userCollection = process.env.MONGODB_USER_COLLECTION;
-const lendCollection = process.env.MONGODB_LEND_COLLECTION;
-const testeCollection = process.env.MONGODB_TESTE_COLLECTION;
+// const url = process.env.MONGODB_URL;
+// const dbName = process.env.MONGODB_DB_NAME;
+// const userCollection = process.env.MONGODB_USER_COLLECTION;
+// const lendCollection = process.env.MONGODB_LEND_COLLECTION;
+// const testeCollection = process.env.MONGODB_TESTE_COLLECTION;
 // Nome da coleção de usuários
 const multer = require('multer');
 
